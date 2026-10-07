@@ -37,6 +37,7 @@ function setConnected(connected) {
 }
 
 connectBtn.addEventListener('click', () => {
+  console.log('socket', socket)
   if (socket && socket.readyState === WebSocket.OPEN) {
     socket.close();
     return;
